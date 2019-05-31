@@ -1,4 +1,4 @@
-openapi: 3.0.2
+openapi: 3.0.0
 info:
   title: Reusable Component representing an Akeneo PIM Category
   version: 0.0.1
