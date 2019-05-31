@@ -14,5 +14,5 @@ components:
             - code
           properties:
             code:
-            type: string
+              type: string
           
