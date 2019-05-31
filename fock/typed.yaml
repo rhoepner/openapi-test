@@ -1,0 +1,16 @@
+openapi: 3.0.2
+info:
+  title: Typed
+  version: 0.0.1
+paths: {}
+components:
+  schemas:
+    fock.typed:
+      type: object
+      description: A Typed object
+      required: 
+        - schema
+      properties:
+        schema:
+          type: string
+          

@@ -1,0 +1,18 @@
+openapi: 3.0.2
+info:
+  title: Reusable Component representing an Akeneo PIM Category
+  version: 0.0.1
+paths: {}
+components:
+  schemas:
+    akeneo.category:
+      allOf:
+        - $ref: '../fock/typed.yaml#components/schemas/fock.typed'
+        - type: object
+          description: Akeneo PIM Category
+          required: 
+            - code
+          properties:
+            code:
+            type: string
+          
