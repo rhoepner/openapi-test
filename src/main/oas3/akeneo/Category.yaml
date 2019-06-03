@@ -5,9 +5,9 @@ info:
 paths: {}
 components:
   schemas:
-    akeneo.category:
+    akeneo.Category:
       allOf:
-        - $ref: 'fock.yaml#/components/schemas/fock.typed'
+        - $ref: '../fock/Typed.yaml#/components/schemas/fock.Typed'
         - type: object
           description: Akeneo PIM Category
           required: 

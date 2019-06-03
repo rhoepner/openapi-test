@@ -1,11 +1,11 @@
 openapi: 3.0.0
 info:
-  title: Typed
+  title: fock.Typed
   version: 0.0.1
 paths: {}
 components:
   schemas:
-    fock.typed:
+    fock.Typed:
       type: object
       description: A Typed object within Fock
       required: 
