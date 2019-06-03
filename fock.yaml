@@ -13,15 +13,3 @@ components:
       properties:
         schema:
           type: string
-    akeneo.category:
-      allOf:
-        - $ref: '#/components/schemas/fock.typed'
-        - type: object
-          description: Akeneo PIM Category
-          required: 
-            - code
-          properties:
-            code:
-              type: string
-                    
-          
