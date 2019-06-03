@@ -1,0 +1,22 @@
+openapi: 3.0.0
+info:
+  title: fock.Localized
+  version: 0.0.1
+paths: {}
+components:
+  schemas:
+    fock.ILocalized:
+      type: object
+      required: 
+        - locale
+      properties:
+        locale: 
+          type: string
+          enum:
+            - de_DE
+            - de_AT
+            - de_CH
+            - fr_FR
+            - fr_CH
+            - it_IT
+            - es_ES

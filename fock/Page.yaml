@@ -1,0 +1,46 @@
+openapi: 3.0.0
+info:
+  title: fock.Typed
+  version: 0.0.1
+paths: {}
+components:
+  schemas:
+    fock.Page:
+      allOf:
+        - $ref: 'Typed.yaml#/components/schemas/fock.Typed'
+        - $ref: 'Localized.yaml#/components/schemas/fock.Localized'
+        - type: object
+          description: A Page within Fock
+          required:
+            - code
+            - caption
+          properties:
+            code:
+              type: string
+            caption: 
+              type: string
+            content: 
+              $ref: '#/components/schemas/fock.Typed'
+          example:
+            schema: fock.Page
+            site: COM
+            locale: de_DE
+            code: csd02624
+            caption: Vegane Kosmetik
+            seo:
+              meta:
+              title: Arzneimittel - shop-apotheke.com
+              description: Arzneimittel günstig bei Ihrer Online Apotheke bestellen
+            content:
+              schema: cms.template.legacy
+              "body": 
+                - schema: "cms.component.legacy.category_wide"
+                - schema: "cms.component.legacy.html"
+                  html: "<p>This is some content</p>"
+                - schema: "cms.component.legacy.product_battery"
+                  headline: "Topseller aus veganes Make-up"
+                  categories: 
+                    - schema: "akeneo.category"
+                      code: "csd02632"       
+                  size: 10,
+                  modus: "topsub"
