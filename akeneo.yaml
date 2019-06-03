@@ -7,7 +7,7 @@ components:
   schemas:
     akeneo.category:
       allOf:
-        - $ref: 'fock.yml#/components/schemas/fock.typed'
+        - $ref: 'https://raw.githubusercontent.com/rhoepner/openapi-test/master/fock.yml#/components/schemas/fock.typed'
         - type: object
           description: Akeneo PIM Category
           required: 
