@@ -20,7 +20,7 @@ components:
             caption: 
               type: string
             content: 
-              $ref: '#/components/schemas/fock.Typed'
+              $ref: 'Typed.yaml#/components/schemas/fock.Typed'
           example:
             schema: fock.Page
             site: COM
